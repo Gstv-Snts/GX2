@@ -1,0 +1,271 @@
+html {
+  font-size: 0.625vw;
+}
+body {
+  font-family: "Montserrat";
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 5.2rem;
+  font-weight: bold;
+}
+h2 {
+  font-size: 3.2rem;
+  line-height: 4.1rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.3rem;
+}
+h4 {
+  font-size: 2.4rem;
+  line-height: 2.3rem;
+  font-weight: 600;
+}
+p,
+span,
+li,
+label {
+  font-size: 1.8rem;
+  line-height: 3.1rem;
+  font-weight: normal;
+}
+input {
+}
+
+article {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-direction: column;
+  width: 26.2rem;
+  height: 25rem;
+  padding: 2rem;
+  box-shadow: 0px 0px 10px #00000029;
+}
+
+article i {
+  font-size: 2.7rem;
+  color: #0eafac;
+}
+article * {
+  padding: 0;
+  margin: 0;
+}
+
+.contato {
+  width: fit-content;
+  height: fit-content;
+  background-color: #10dfc2;
+  border-radius: 1.5rem;
+  border: none;
+  padding: 1rem 7rem;
+  color: #fbfbfb;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  font-weight: inherit;
+}
+header {
+  width: 100%;
+  height: 8rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #f6f6f7;
+}
+.logo {
+  width: 13.4rem;
+}
+nav {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 4rem;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  color: #000000;
+}
+.section-1 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  gap: 16.5rem;
+  width: 100%;
+  height: 50rem;
+  background-image: url(../images/Background.png);
+  background-size: cover;
+  color: #fbfbfb;
+}
+
+.section-1-right {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 6.966rem;
+}
+
+.rocketLogo {
+  width: 13.85rem;
+}
+.rocketTalentsLogo {
+  width: 33.2rem;
+}
+
+.section-2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 14.5rem;
+  padding: 5rem 0;
+}
+.section-2 span {
+  font-weight: 600;
+  color: #0eafac;
+}
+.section-2 img {
+  width: 25.3rem;
+}
+
+.section-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.section-3 h2 {
+  color: #0eafac;
+}
+.section-3-p {
+  text-align: center;
+}
+
+.article-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.9rem;
+}
+
+.section-4-5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 14.2rem;
+  padding: 7.5rem 0;
+}
+.section-4-5 img {
+  width: 29rem;
+}
+.section-4-5 div {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.section-4-5 h2 {
+  color: #0eafac;
+}
+
+.section-4-5 ul {
+  list-style: disc;
+}
+
+.section-6 {
+  width: 100%;
+  height: 21.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8.6rem;
+  background-color: #19dbd1;
+  color: #fbfbfb;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form input {
+  width: 30rem;
+  height: 3.5rem;
+  border-radius: 1rem;
+  border: none;
+}
+.botao-amarelo {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  width: fit-content;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 0.8rem 2rem;
+  background-color: #ffb900;
+  border-radius: 1rem;
+  border: none;
+  color: #fbfbfb;
+}
+
+footer {
+  height: 45.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #04254c;
+  color: #fbfbfb;
+  padding: 5rem 12rem 8.9rem 12rem;
+}
+
+.footer-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.footer-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.footer-2 ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+address {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+}
+
+address div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+address img {
+  width: 1.6rem;
+  height: fit-content;
+  padding: 1.5rem 1.7rem;
+  background-color: #fbfbfb;
+  border-radius: 50%;
+}
+
+.footer-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
