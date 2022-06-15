@@ -1,5 +1,8 @@
+* {
+  box-sizing: border-box;
+}
 html {
-  font-size: 0.625vw;
+  font-size: 62.5%;
 }
 body {
   font-family: "Montserrat";
@@ -30,9 +33,9 @@ p,
 span,
 li,
 label {
-  font-size: 1.8rem;
-  line-height: 3.1rem;
-  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: 2.3rem;
+  font-weight: 400;
 }
 input {
 }
@@ -58,8 +61,6 @@ article * {
 }
 
 .contato {
-  width: fit-content;
-  height: fit-content;
   background-color: #10dfc2;
   border-radius: 1.5rem;
   border: none;
@@ -67,7 +68,7 @@ article * {
   color: #fbfbfb;
   font-size: 1.8rem;
   line-height: 2.2rem;
-  font-weight: inherit;
+  font-weight: 500;
 }
 header {
   width: 100%;
@@ -75,20 +76,22 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: #f6f6f7;
+  padding: 0 12rem;
 }
 .logo {
-  width: 13.4rem;
+  width: 13.5rem;
 }
 nav {
   display: flex;
   align-items: center;
   flex-direction: row;
   gap: 4rem;
-  font-size: 1.6rem;
-  line-height: 1.8rem;
-  color: #000000;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  font-weight: 500;
+  color: #1c1c1d;
 }
 .section-1 {
   display: flex;
@@ -103,6 +106,19 @@ nav {
   color: #fbfbfb;
 }
 
+.section-1-left {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.section-1-left h1 {
+  margin: 0;
+}
+.section-1-left p {
+  font-size: 1.8rem;
+  line-height: 3.1rem;
+}
 .section-1-right {
   display: flex;
   align-items: center;
@@ -126,12 +142,17 @@ nav {
   gap: 14.5rem;
   padding: 5rem 0;
 }
+.section-2 div {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
 .section-2 span {
   font-weight: 600;
   color: #0eafac;
 }
 .section-2 img {
-  width: 25.3rem;
+  width: 18.5%;
 }
 
 .section-3 {
