@@ -156,52 +156,64 @@ nav {
 }
 
 .section-3 {
+  height: 49.7rem;
   display: flex;
+  background-color: #f6f6f6;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: column;
-  gap: 3rem;
 }
 
-.section-3 h2 {
+.section-3-text h2 {
   color: #0eafac;
+  margin-bottom: 1.6rem;
 }
-.section-3-p {
+
+.section-3-text {
   text-align: center;
 }
 
-.article-container {
+.section-3-articles {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 2.9rem;
 }
 
-.section-4-5 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  gap: 14.2rem;
-  padding: 7.5rem 0;
-}
-.section-4-5 img {
-  width: 29rem;
-}
-.section-4-5 div {
+.section-4 {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  align-items: center;
+  gap: 11.5rem;
+  padding: 5rem 0 6rem 0;
 }
-.section-4-5 h2 {
+
+.section-4 h2 {
   color: #0eafac;
+  margin-bottom: 2.4rem;
 }
 
-.section-4-5 ul {
-  list-style: disc;
+.section-4 h3 {
+  margin-bottom: 1.6rem;
 }
 
-.section-6 {
+.section-4-top,
+.section-4-bottom {
+  width: 86.6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14.2rem;
+}
+.section-4-top img {
+  width: 25.3rem;
+}
+.section-4-bottom img {
+  width: 29.846rem;
+}
+
+.section-5 {
   width: 100%;
   height: 21.5rem;
   display: flex;
@@ -211,6 +223,10 @@ nav {
   gap: 8.6rem;
   background-color: #19dbd1;
   color: #fbfbfb;
+  padding: 5rem 0;
+}
+.section-5 h2 {
+  margin-bottom: 1.6rem;
 }
 
 form {
@@ -231,6 +247,7 @@ form input {
   gap: 1.6rem;
   width: fit-content;
   font-size: 1.6rem;
+  line-height: 2.3rem;
   font-weight: 600;
   padding: 0.8rem 2rem;
   background-color: #ffb900;
@@ -240,13 +257,14 @@ form input {
 }
 
 footer {
-  height: 45.6rem;
+  height: fit-content;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-start;
+  justify-content: center;
   background-color: #04254c;
   color: #fbfbfb;
-  padding: 5rem 12rem 8.9rem 12rem;
+  padding: 5rem 0 8.9rem 0;
+  gap: 7rem;
 }
 
 .footer-1 {
@@ -278,7 +296,6 @@ address div {
 }
 
 address img {
-  width: 1.6rem;
   height: fit-content;
   padding: 1.5rem 1.7rem;
   background-color: #fbfbfb;
