@@ -177,6 +177,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #fbfbfb;
   gap: 2.9rem;
 }
 
@@ -224,6 +225,12 @@ nav {
   background-color: #19dbd1;
   color: #fbfbfb;
   padding: 5rem 0;
+}
+.section-5-top {
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
 }
 .section-5 h2 {
   margin-bottom: 1.6rem;
