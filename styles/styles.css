@@ -1,11 +1,21 @@
 * {
   box-sizing: border-box;
 }
-html {
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  width: 100%;
+  font-family: "Montserrat";
   font-size: 62.5%;
 }
-body {
-  font-family: "Montserrat";
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
 }
 
 h1 {
@@ -39,7 +49,9 @@ label {
 }
 input {
 }
-
+.logo {
+  width: 13.4rem;
+}
 article {
   display: flex;
   align-items: flex-start;
@@ -60,28 +72,51 @@ article * {
   margin: 0;
 }
 
+details summary {
+  list-style: none;
+  font-size: 3rem;
+}
+details {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+details ul {
+  display: flex;
+  flex-direction: column;
+  background-color: #10dfc2;
+  border: 0.06rem solid #707070;
+  border-radius: 0.5rem;
+  position: absolute;
+  list-style-type: none;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
 .contato {
+  width: fit-content;
+  min-width: 120px;
   background-color: #10dfc2;
   border-radius: 1.5rem;
   border: none;
-  padding: 1rem 7rem;
+  padding: 1rem 0;
   color: #fbfbfb;
   font-size: 1.8rem;
   line-height: 2.2rem;
   font-weight: 500;
+  padding: 1rem 7rem;
 }
 header {
   width: 100%;
-  height: 8rem;
+  height: fit-content;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   background-color: #f6f6f7;
-  padding: 0 12rem;
-}
-.logo {
-  width: 13.5rem;
+  gap: 4rem;
+  padding: 1.9rem 12rem;
 }
 nav {
   display: flex;
@@ -95,15 +130,18 @@ nav {
 }
 .section-1 {
   display: flex;
+  flex-wrap: wrap-reverse;
   align-items: center;
   flex-direction: row;
   justify-content: center;
-  gap: 16.5rem;
+  gap: 12vw;
   width: 100%;
-  height: 50rem;
+  height: fit-content;
   background-image: url(../images/Background.png);
   background-size: cover;
+  background-repeat: no-repeat;
   color: #fbfbfb;
+  padding: 10rem 1rem;
 }
 
 .section-1-left {
@@ -120,27 +158,22 @@ nav {
   line-height: 3.1rem;
 }
 .section-1-right {
+  width: fit-content;
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 6.966rem;
 }
 
-.rocketLogo {
-  width: 13.85rem;
-}
-.rocketTalentsLogo {
-  width: 33.2rem;
-}
-
 .section-2 {
   width: 100%;
   display: flex;
+  flex-wrap: wrap-reverse;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  gap: 14.5rem;
-  padding: 5rem 0;
+  gap: 10vw;
+  padding: 5rem 1rem;
 }
 .section-2 div {
   display: flex;
@@ -151,17 +184,15 @@ nav {
   font-weight: 600;
   color: #0eafac;
 }
-.section-2 img {
-  width: 18.5%;
-}
 
 .section-3 {
-  height: 49.7rem;
+  height: fit-content;
   display: flex;
   background-color: #f6f6f6;
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
+  padding: 1rem;
 }
 
 .section-3-text h2 {
@@ -177,16 +208,18 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   background-color: #fbfbfb;
   gap: 2.9rem;
 }
 
 .section-4 {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 11.5rem;
-  padding: 5rem 0 6rem 0;
+  padding: 1rem;
 }
 
 .section-4 h2 {
@@ -200,31 +233,32 @@ nav {
 
 .section-4-top,
 .section-4-bottom {
-  width: 86.6rem;
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 14.2rem;
+  gap: 12vw;
 }
-.section-4-top img {
-  width: 25.3rem;
+.section-4-top {
+  flex-wrap: wrap;
 }
-.section-4-bottom img {
-  width: 29.846rem;
+.section-4-bottom {
+  flex-wrap: wrap-reverse;
+  gap: 17.3 vw;
 }
 
 .section-5 {
   width: 100%;
-  height: 21.5rem;
+  height: fit-content;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
-  gap: 8.6rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 6vw;
   background-color: #19dbd1;
   color: #fbfbfb;
-  padding: 5rem 0;
+  padding: 5rem 1rem;
 }
 .section-5-top {
   height: 100%;
@@ -268,9 +302,11 @@ footer {
   display: flex;
   align-items: flex-start;
   justify-content: center;
+
+  flex-wrap: wrap;
   background-color: #04254c;
   color: #fbfbfb;
-  padding: 5rem 0 8.9rem 0;
+  padding: 5rem 1rem 8.9rem 1rem;
   gap: 7rem;
 }
 
@@ -313,4 +349,22 @@ address img {
   display: flex;
   flex-direction: column;
   gap: 4rem;
+}
+
+@media (max-width: 1130px) {
+  header {
+    justify-content: space-around;
+    padding: 1.9rem 0;
+  }
+  nav {
+    display: none;
+  }
+  details {
+    display: flex;
+  }
+}
+@media (max-width: 650px) {
+  header {
+    flex-direction: column;
+  }
 }
