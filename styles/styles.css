@@ -53,12 +53,14 @@ input {
   width: 13.4rem;
 }
 article {
+  width: 100%;
+  max-width: 26.2rem;
   display: flex;
   align-items: flex-start;
   gap: 2rem;
   flex-direction: column;
-  width: 26.2rem;
-  height: 25rem;
+  height: 100%;
+  min-height: 25rem;
   padding: 2rem;
   box-shadow: 0px 0px 10px #00000029;
 }
@@ -138,7 +140,7 @@ nav {
   width: 100%;
   height: fit-content;
   background-image: url(../images/Background.png);
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   color: #fbfbfb;
   padding: 10rem 1rem;
@@ -146,7 +148,7 @@ nav {
 
 .section-1-left {
   display: flex;
-  align-items: flex-start;
+  align-content: flex-start;
   flex-direction: column;
   gap: 2.4rem;
 }
@@ -158,11 +160,12 @@ nav {
   line-height: 3.1rem;
 }
 .section-1-right {
-  width: fit-content;
+  width: 100%;
+  max-width: fit-content;
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 6.966rem;
+  gap: 5vw;
 }
 
 .section-2 {
@@ -173,7 +176,7 @@ nav {
   align-items: center;
   flex-direction: row;
   gap: 10vw;
-  padding: 5rem 1rem;
+  padding: 1rem;
 }
 .section-2 div {
   display: flex;
@@ -190,9 +193,10 @@ nav {
   display: flex;
   background-color: #f6f6f6;
   align-items: center;
-  justify-content: space-evenly;
+  gap: 5rem;
+  justify-content: space-between;
   flex-direction: column;
-  padding: 1rem;
+  padding: 5rem 1rem;
 }
 
 .section-3-text h2 {
@@ -205,11 +209,11 @@ nav {
 }
 
 .section-3-articles {
-  display: flex;
-  align-items: center;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto;
   justify-content: center;
-  flex-wrap: wrap;
-  background-color: #fbfbfb;
   gap: 2.9rem;
 }
 
@@ -350,7 +354,11 @@ address img {
   flex-direction: column;
   gap: 4rem;
 }
-
+@media (min-width: 1440px) {
+  html {
+    font-size: 80%;
+  }
+}
 @media (max-width: 1130px) {
   header {
     justify-content: space-around;
@@ -363,8 +371,34 @@ address img {
     display: flex;
   }
 }
+@media (max-width: 800px) {
+  * {
+    text-align: center;
+    align-items: center;
+  }
+  .section-3-articles {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+  }
+}
 @media (max-width: 650px) {
   header {
     flex-direction: column;
+  }
+}
+@media (max-width: 400px) {
+  html {
+    font-size: 45%;
+  }
+  .rocketLogo {
+    width: 40%;
+  }
+  .rocketTalentsLogo {
+    width: 100%;
+  }
+  .section-2 img,
+  .section-4-top img,
+  .section-4-bottom img {
+    width: 70%;
   }
 }
