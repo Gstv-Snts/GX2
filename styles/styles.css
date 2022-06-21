@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  transition: all 0.5s;
 }
 html,
 body {
@@ -52,6 +53,9 @@ input {
 .logo {
   width: 13.4rem;
 }
+.section-1-logo {
+  width: 6.6rem;
+}
 article {
   width: 100%;
   max-width: 26.2rem;
@@ -94,6 +98,7 @@ details ul {
   padding: 1rem 2rem;
   font-size: 2rem;
   line-height: 3rem;
+  color: #f6f6f7;
 }
 
 .contato {
